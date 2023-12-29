@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Application</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Icons Link -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <h1 class="head">Simple Post Application</h1>
+    <div class="app_container">
+      <div class="left">
+        <form id="form" action="">
+          <label for="msg">Write something about this session</label>
+          <textarea name="msg" id="input" cols="30" rows="10"></textarea>
+          <div class="msg"></div>
+          <button type="submit">Post</button>
+        </form>
+      </div>
+      <div class="right">
+        <div>
+          <h4 class="post_head">Your Post here : </h4>
+        </div>
+
+        <div class="posts">
+            <div class="post">
+                <p class="content">Post - 1</p>
+
+                <div class="action">
+                  <i onClick='editPost(this)' class="uil uil-edit"></i>
+                  <i onClick='deletePost(this)' class="uil uil-trash"></i>
+                </div>
+            </div>
+       
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
